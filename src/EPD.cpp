@@ -242,7 +242,7 @@ void EPD::Init(int mode){
         this->data(12);
 
         this->command(0x45);
-        this->data(0);
+        this->data(0x00);
         this->data(0x00);
         this->data(212);//104x212
         this->data(0x00);
