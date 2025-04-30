@@ -1,3 +1,4 @@
+#include "qrcode.h"
 #include "EPD.h"
 
 const unsigned char lut_full_update[]= {
