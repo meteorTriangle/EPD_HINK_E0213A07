@@ -270,6 +270,12 @@ void EPD::Init(int mode){
 
 
 void EPD::putImg(uint32_t* img_src){
+    
+    this->command(0x4E);
+    this->data(0x00);
+    this->command(0x4F);
+    this->data(0xD3);
+    this->data(0x00);
     this->command(0x24);
 
     for(uint i=0;i<212;i++)
@@ -293,6 +299,12 @@ void EPD::putImg(uint32_t* img_src){
 
 
 void EPD::putPartImg(uint32_t* img_src){
+    
+    this->command(0x4E);
+    this->data(0x00);
+    this->command(0x4F);
+    this->data(0xD3);
+    this->data(0x00);
     this->command(0x24);
 
     for(uint i=0;i<212;i++)
@@ -314,6 +326,12 @@ void EPD::putPartImg(uint32_t* img_src){
 }
 
 void EPD::putPartBaseImg(uint32_t* img_src){
+    
+    this->command(0x4E);
+    this->data(0x00);
+    this->command(0x4F);
+    this->data(0xD3);
+    this->data(0x00);
     this->command(0x24);
 
     for(uint i=0;i<212;i++)
